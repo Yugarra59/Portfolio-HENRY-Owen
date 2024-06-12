@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    font-family: "Ubuntu Sans Mono", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 80px;
+}
+
+
+em {
+    color :  #27ae60;
+}
+header,
+footer {
+    background-color:#95a5a6;
+    color: black;
+    font-size: 1.5em;
+}
+
+header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+
+footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+}
+
+
+.Présentation {
+    
+display: flex;
+  flex-direction: row;
+  max-width: 1360px;
+  align-items: flex-start;
+  margin: auto;
+   
+}
+
+.photo {
+    float: right;
+    border-radius: 50%;
+    margin-left: 3em;
+    width: 500px;
+    height: 600px;
+    
+}
+.btn-5,
+.btn-5 *,
+.btn-5 :after,
+.btn-5 :before,
+.btn-5:after,
+.btn-5:before {
+  border: 0 solid #4CAF50;
+  box-sizing: border-box;
+}
+.btn-5 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 100%;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0px;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+.btn-5:disabled {
+  cursor: default;
+}
+.btn-5:-moz-focusring {
+  outline: auto;
+}
+.btn-5 svg {
+  display: block;
+  
+}
+.btn-5 [hidden] {
+  display: none;
+}
+.btn-5 {
+  border-radius: 50%;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.6rem 2rem;
+  position: relative;
+  margin-right: 612px;
+}
+.btn-5 span {
+  mix-blend-mode: difference;
+}
+.btn-5:before {
+  --tilt: 1.2rem;
+  background: #fff;
+  -webkit-clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+  content: "";
+  display: block;
+  height: 100%;
+  left: calc(-100% - var(--tilt));
+  position: absolute;
+  top: 0;
+  transform: translateX(var(--progress, 0));
+  transition: transform 0.5s ease;
+  width: calc(100% + var(--tilt));
+}
+.btn-5:hover:before {
+  --progress: 100%;
+}
+
+
+
+.BoutonNavigation {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   
+   
+   
+}
+
+.nav-button, .social {
+    margin-left: 10px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+
+
+}
+.nav-button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 50%;
+    transition: transform 0.5s, box-shadow 0.5s;
+    cursor: pointer;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.nav-button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+.bouton:active {
+    transform: translateY(5px);
+
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+.social {
+    height: 55px;
+    width: 55px;
+    transition: transform 0.5s, box-shadow 0.5s;
+    cursor: pointer;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.social:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+
+h3 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    border-radius: 5px;
+    background-color: #95a5a6;
+    padding: 50px;
+    height: 300px;
+}
+
+.LogoCompétences {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    justify-content: center;
+}
+
+
+
+.logo {
+    max-width: 100px;
+    margin-bottom: 5px;
+    transition: filter 0.5s;
+}
+
+.logo-name {
+    font-size: 14px;
+    text-align: center;
+    visibility: hidden;
+    color: #333;
+}
+
+.LogoCompétences:hover .logo-name {
+    visibility: visible;
+}
+
+.LogoCompétences:hover .logo {
+    filter: brightness(1.5);
+}
+
+
+.projets {
+    display: flex;
+    flex-direction: row;
+    gap: 40px; 
+    border-radius: 5px;
+    background-color: #95a5a6;
+    padding: 50px;
+    height: 250px;
+    margin: auto;
+}
+
+
+
+
+.techno {
+    list-style-type: none;
+    padding-left: 0; 
+    text-align: center; 
+    color: black;
+    
+}
+
+
+.projet {
+    width: 150px;
+    height: 150px;
+  
+}
+
+.nomprojet {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nomprojet:hover {
+    color: black;
+}
+
+.projet, .projet *, .projet :after, .projet :before, .projet:after, .projet:before {
+    border: 0 solid;
+    box-sizing: border-box;
+}
+
+.projet {
+    background-color: #000;
+    background-image: none;
+    color: #27ae60;
+    cursor: pointer;
+    margin: auto;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.projet:-moz-focusring {
+    outline: auto;
+}
+
+.projet {
+    border-radius: 99rem;
+    border-width: 2px;
+    overflow: hidden;
+    padding: 0.8rem 3rem;
+    position: relative;
+}
+
+.projet:hover {
+    transform: scale(1.1);
+}
+
+.projet:before {
+    aspect-ratio: 1;
+    background: #27ae60;
+    border-radius: 50%;
+    content: "";
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.8s;
+    width: 0;
+}
+
+.projet:hover:before {
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    color: #27ae60;
+    
+  }
+  
+  .form-nom-email {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .form-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    
+  }
+  input,
+  textarea {
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: 5px solid #95a5a6;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    
+  }
+  
+  button {
+    width: 250px;
+    height: 70px;
+    margin: auto;
+    font-family: "Ubuntu Sans Mono", sans-serif;
+    margin-top: 30px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    transition: transform 0.5s, box-shadow 0.5s;
+    cursor: pointer;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    
+  }
+  button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.4);
+    
+}
+
+button:active {
+    transform: translateY(5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
