@@ -3,10 +3,15 @@
     padding: 0;
   }
 
+
+
+
 body {
     font-family: "Raleway", sans-serif;
-    background: radial-gradient(#bdc3c7, #89253e);
-    color: white;
+    background: #0c0d11;
+    color: #f5f5f5;
+
+
 }
 
 .text-justify {
@@ -34,7 +39,7 @@ h1 {
 
 
 span {
-    color :  #3856ad;
+    color :  #a8b0c4;
     text-transform: uppercase;
 }
 header,
@@ -64,6 +69,8 @@ footer {
     width: 500px;
     height: 600px;
     margin-top: 120px;
+    border: 6px ridge #411414;
+   border-radius: 50%;
   }
   .flex-space-around {
     justify-content: space-around;
@@ -78,6 +85,7 @@ footer {
   }
   .flex-row-reverse {
     flex-direction: row-reverse;
+    
   }
 
 
@@ -87,7 +95,7 @@ footer {
 .btn-5 :before,
 .btn-5:after,
 .btn-5:before {
-  border: 0 solid #2d69a9;
+  border: 0 solid #a8b0c4;
   box-sizing: border-box;
 }
 .btn-5 {
@@ -95,7 +103,7 @@ footer {
   -webkit-appearance: button;
   background-color: #000;
   background-image: none;
-  color: #fff;
+  color: #f5f5f5;
   cursor: pointer;
   text-decoration: none;
   font-size: 100%;
@@ -107,6 +115,8 @@ footer {
   text-transform: uppercase;
   margin-left: 20px;
 }
+
+
 .btn-5:disabled {
   cursor: default;
 }
@@ -133,7 +143,8 @@ footer {
 }
 .btn-5:before {
   --tilt: 1.2rem;
-  background: #fff;
+  background: #f5f5f5;
+  
   -webkit-clip-path: polygon(
     0 0,
     calc(100% - var(--tilt)) 0,
@@ -177,14 +188,33 @@ footer {
     margin-left: 10px;
     margin-right: 20px;
     text-decoration: none;
-    color: #333;
+    background-color: #a8b0c4;
+    border-radius: 10px;
+}
 
+.social {
+  transition: transform 0.5s, box-shadow 0.5s;
+    cursor: pointer;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
 
+.social:hover {
+  background-color: #2e345d;
+    color: #f5f5f5;
+    transform: translateY(-2px);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.4);
+
+}
+
+.social:active {
+  transform: translateY(5px);
+
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
 .nav-button {
     padding: 10px 15px;
-    background-color: #3856ad;
-    color: white;
+    background-color: #a8b0c4;
+    color: black;
     border-radius: 1.5rem;
     transition: transform 0.5s, box-shadow 0.5s;
     cursor: pointer;
@@ -192,8 +222,8 @@ footer {
 }
 
 .nav-button:hover {
-    background-color: #95c8ff;
-    color: black;
+    background-color: #2e345d;
+    color: #f5f5f5;
     transform: translateY(-2px);
     box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.4);
 }
@@ -262,7 +292,7 @@ h2 {
     font-size: 14px;
     text-align: center;
     visibility: hidden;
-    color: black;
+    color: #f5f5f5;
 }
 
 .LogoCompétences:hover .logo-name {
@@ -303,7 +333,7 @@ h2 {
 }
 
 .nomprojet {
-    color: white;
+    color: black;
     text-decoration: none;
     position: absolute;
     top: 0;
@@ -316,7 +346,7 @@ h2 {
 }
 
 .nomprojet:hover {
-    color: black;
+    color: #f5f5f5;
 }
 
 .projet, .projet *, .projet :after, .projet :before, .projet:after, .projet:before {
@@ -325,9 +355,9 @@ h2 {
 }
 
 .projet {
-    background-color: #000;
+    background-color: #a8b0c4;
     background-image: none;
-    color: #89253e;
+    color: #2e345d;
     cursor: pointer;
     margin: auto;
     padding: 0;
@@ -352,7 +382,7 @@ h2 {
 
 .projet:before {
     aspect-ratio: 1;
-    background: #89253e;
+    background: #2e345d;
     border-radius: 50%;
     content: "";
     left: 50%;
@@ -372,7 +402,8 @@ form {
     flex-direction: column;
     width: 60%;
     margin: auto;
-    color: #3856ad;
+    color: #f5f5f5;
+    
     
   }
   
@@ -380,6 +411,7 @@ form {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    
   }
   
   .form-column {
@@ -394,11 +426,13 @@ form {
     padding: 20px;
     border-radius: 5px;
     border: none;
+    background-color: #a8b0c4;
+    color: black;
   }
 
   input:focus,
   textarea:focus {
-    outline: 5px solid #89253e;
+    outline: 5px solid #411414;
   }
   
   label {
@@ -412,8 +446,8 @@ form {
     margin: auto;
     font-family: "Ubuntu Sans Mono", sans-serif;
     margin-top: 30px;
-    background-color: #3856ad;
-    color: white;
+    background-color: #2e345d;
+    color: #f5f5f5;
     border-radius: 5px;
     transition: transform 0.5s, box-shadow 0.5s;
     cursor: pointer;
@@ -421,7 +455,7 @@ form {
     
   }
   button:hover {
-    background-color: #98C8FD;
+    background-color: #a8b0c4;
     color: black;
     transform: translateY(-2px);
     box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.4);
