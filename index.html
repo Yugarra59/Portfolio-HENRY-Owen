@@ -6,22 +6,24 @@
     <meta name="description" content="ceci est mon premier portfolio">
     <link href="style.css" rel="stylesheet">
     <script src="script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Porfolio Owen HENRY</title>
 </head>
     <body>
-        <header id="Retour">
+        <header id="Navigation5">
             <nav>
                 
             <div class="BoutonNavigation">
 
                 <a href="HENRY_Owen.pdf" class="btn-5" id = "CV" target="_blank"><strong>Mon CV</strong></a>
-                <a href="#Acceuil" class="nav-button">Accueil</a>
-                <a href="#Compétences" class="nav-button">Compétences</a>
-                <a href="#Projets" class="nav-button">Projets</a>
-                <a href="#Contact" class="nav-button">Contact</a>
+                <a href="#Navigation1" class="nav-button">Accueil</a>
+                <a href="#Navigation2" class="nav-button">Compétences</a>
+                <a href="#Navigation3" class="nav-button">Projets</a>
+                <a href="#Navigation4" class="nav-button">Contact</a>
             
             <a href="https://www.linkedin.com/in/owen-henry-/" target="_blank">
                 <img src="media/sociale.svg" class="social svg" alt="logo de linkedin">
@@ -33,7 +35,7 @@
         <main>
             
              
-            <h1 id="Accueil"><br>Bonjour chers visiteurs !</br> 
+            <h1 id="Navigation1"><br>Bonjour chers visiteurs !</br> 
                 Je m'appelle Owen HENRY.</h1>
               
            <article> <div class="flex-space-around flex align-item-center flex-row-reverse margin-horizontale text-height"><img src="./media/owenH3.webp" class="photo" alt="c'est moi">
@@ -49,8 +51,8 @@
     </article>
 
 
-        <section>
-                <h2 id="Compétences">Mes compétences</h2>
+        <section id="Navigation2" class="fade-in">
+                <h2>Mes compétences</h2>
                 <div class="logos">
                     <div class="LogoCompétences">
                             <img src="media/html-5.png" class="logo" alt="logo de HTML5">
@@ -88,8 +90,8 @@
 
         </section>
 
-        <section>
-            <h2 id="Projets">Mes projets</h2>
+        <section id="Navigation3" class="fade-in">
+            <h2>Mes projets</h2>
         <div class="projets">
                 <div class="projet">
                     <a href="https://yugarra59.github.io/Horloge-JS/" target="_blank" class="nomprojet">Horloge</a>
@@ -108,8 +110,8 @@
 
         </section>
 
-        <section>
-            <h2 class="section-contact" id="Contact">Me contacter</h2>
+        <section id="Navigation4" class="fade-in">
+            <h2 class="section-contact">Me contacter</h2>
             <form id = "contactForm">
                 <div class="form-nom-email">
                     <div class="form-column">
@@ -137,7 +139,7 @@
     
     <footer>
         <div class="BoutonNavigation">
-            <a href="#Retour" class="nav-button">Accueil</a> 
+            <a href="#Navigation5" class="nav-button">Accueil</a> 
         <a href="https://www.linkedin.com/in/owen-henry-/" target="_blank">
             <img src="media/sociale.svg"  class="social svg" alt="logo de linkedin">
             </a>

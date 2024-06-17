@@ -20,6 +20,33 @@
     });
 
 
+    $(document).ready(function() {
+        // Smooth scroll for navigation links
+        $(".nav-button").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                
+                var hash = this.hash;
+                
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 2000, function(){
+                    window.location.hash = hash;
+                });
+            }
+        });
+    
+        // Fade-in effect
+        $('.fade-in').each(function() {
+            var element = $(this);
+            element.waypoint(function() {
+                element.addClass('appear');
+            }, { offset: '80%' });
+        });
+    });
+    
+    
+
 
 
 
