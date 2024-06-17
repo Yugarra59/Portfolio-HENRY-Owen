@@ -21,7 +21,7 @@
 
 
     $(document).ready(function() {
-        // Smooth scroll for navigation links
+        
         $(".nav-button").on('click', function(event) {
             if (this.hash !== "") {
                 event.preventDefault();
@@ -36,7 +36,7 @@
             }
         });
     
-        // Fade-in effect
+        
         $('.fade-in').each(function() {
             var element = $(this);
             element.waypoint(function() {
