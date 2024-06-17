@@ -45,6 +45,7 @@
         });
     });
 
+    
     let modal = document.getElementById('modal');
     let modalOkBtn = document.getElementById('modal-ok-btn');
     let closeModal = document.getElementsByClassName('close')[0];
