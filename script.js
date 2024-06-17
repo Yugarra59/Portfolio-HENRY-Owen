@@ -15,7 +15,7 @@
         // Simule une soumission réussie
         responseDiv.innerHTML = 'Merci, ' + formData.get('name') + '! Votre message a été envoyé.';
 
-        // Réinitialiser le formulaire
+        
         form.reset();
     });
 
@@ -26,7 +26,7 @@
             if (this.hash !== "") {
                 event.preventDefault();
                 
-                var hash = this.hash;
+                let hash = this.hash;
                 
                 $('html, body').animate({
                     scrollTop: $(hash).offset().top
