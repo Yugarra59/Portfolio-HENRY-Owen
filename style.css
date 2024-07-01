@@ -487,6 +487,26 @@ button:active {
     cursor: pointer;
 }
 
+@media screen and (max-width: 420px) {
+
+    .photo {
+      display: none;
+    }
+    .bouton-navigation {
+      
+      flex-direction: column;
+    }
+
+    .nav-button {
+      flex-direction: column;
+    }
+    p {
+      overflow: scroll;
+      padding-top: 300px;
+    }
+  }
+
+
 
 
 
