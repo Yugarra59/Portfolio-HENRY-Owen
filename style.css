@@ -142,8 +142,7 @@ main.container {
 .photo {
   border-radius: 50%;
   border: 3px ridge #411414;
-  width: 50%;
-  text-align: center;
+  
   
 }
 
