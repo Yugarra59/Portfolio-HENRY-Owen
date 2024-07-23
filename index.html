@@ -4,137 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ceci est mon premier portfolio">
-    <link href="style.css" rel="stylesheet">  
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4/dist/jquery.bxslider.min.css">
+    <link href="style.css" rel="stylesheet">
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
     <title>Porfolio Owen HENRY</title>
 </head>
     <body>
         <header id="Navigation5">
-            <nav class="navigation">
+            <nav class="bouton-navigation">
                 
-                <a href="HENRY_Owen.pdf" class="CV" target="_blank"><strong>Mon CV</strong></a>
+                <a href="HENRY_Owen.pdf" class="nav-cv" target="_blank"><strong>Mon CV</strong></a>
 
-            <ul>
-                <li><a href="#Navigation1">Accueil</a></li>
-                <li><a href="#Navigation2">Compétences</a></li>
-                <li><a href="#Navigation3">Projets</a></li>
-                <li><a href="#Navigation4">Contact</a></li>
-
-            </ul>    
+                <div class="align-button">
+                <a href="#Navigation1" class="nav-button">Accueil</a>
+                <a href="#Navigation2" class="nav-button">Compétences</a>
+                <a href="#Navigation3" class="nav-button">Projets</a>
+                <a href="#Navigation4" class="nav-button">Contact</a>
             
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/owen-henry-/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/Yugarra59" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-        
+            <a href="https://www.linkedin.com/in/owen-henry-/" target="_blank">
+                <img src="media/sociale.svg" class="social svg" alt="logo de linkedin">
+            </a>
+            <a href="https://github.com/Yugarra59" target="_blank">
+                <img src="media/github.svg" class="social svg" alt="logo de Github">
+            </a>
+        </div>
 
         
             </nav>
         </header>
  
-    <main class="container">
+        <main>
+            <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close"></span>
+                <p>Bienvenue sur mon portfolio, j'ai utiliser HTML5, CSS, Javascript ainsi qu'une librairie comme jQuery pour le construire, bonne visite !</p>
+                <button id="modal-ok-btn">OK</button>
+            </div>
+        </div>
             
-            
-        <section id="Navigation1">
-            
-        <article> 
-            <h1 ><br>Bonjour chers visiteurs !<br> 
-                Je m'appelle Owen HENRY.</h1>
              
-                    <img src="media/owenH3.webp" class="photo" alt="c'est moi">
-                    
-                    <p><br>Je suis un passionné de <span>jeux vidéo</span>, notamment des open world comme Elden Ring, ou des roguelike, tels que Hades ou Have a Nice Death.<br>
-                        La <span >natation</span> est mon sport de prédilection ; je me sens comme un poisson dans l'eau. Cela me permet de me défouler et de retrouver mes esprits.<br>
-                        J'adore <span >cuisiner</span> et expérimenter avec des recettes originales. 
-                        En <span >musique</span> j'apprécie particulièrement les genres alternatifs, le rock, ainsi que tout ce qui est électronique et techno.<br>
-                        J'ai aussi une petite passion pour la <span >lecture</span>, notamment dans les genres fantasy et science-fiction. <br>
-                        En termes de personnalité, je suis calme, curieux, très ouvert d'esprit et chaleureux.
+            <h1 id="Navigation1"><br>Bonjour chers visiteurs !<br> 
+                Je m'appelle Owen HENRY.</h1>
+              
+           <div class="flex-space-around flex align-item-center flex-row-reverse margin-horizontale text-height"><img src="./media/owenH3.webp" class="photo" alt="c'est moi">
+        <p class="text-justify"><br>Je suis un passionné de <span class="coucou">jeux vidéo</span>, notamment des open world comme Elden Ring, ou des roguelike, tels que Hades ou Have a Nice Death.<br>
+            La <span class="coucou">natation</span> est mon sport de prédilection ; je me sens comme un poisson dans l'eau. Cela me permet de me défouler et de retrouver mes esprits.<br>
+            J'adore <span class="coucou">cuisiner</span> et expérimenter avec des recettes originales. 
+            En <span class="coucou">musique</span> j'apprécie particulièrement les genres alternatifs, le rock, ainsi que tout ce qui est électronique et techno.<br>
+            J'ai aussi une petite passion pour la <span class="coucou">lecture</span>, notamment dans les genres fantasy et science-fiction. <br>
+            En termes de personnalité, je suis calme, curieux, très ouvert d'esprit et chaleureux.
             
-                    </p>
-                
-            </article>
-        </section> 
+            </p>
+        </div>
+    
 
-        <section id="Navigation2">
 
-            <article>
-            <h2>Mes compétences</h2>
-            
-                <div class="competence">
-                    <ul>
-                        <li>
+        <section id="Navigation2" class="fade-in">
+                <h2>Mes compétences</h2>
+                <div class="logos">
+                    <div class="LogoCompétences">
                             <img src="media/html-5.png" class="logo" alt="logo de HTML5">
-                            <span class="logo-name">HTML5</span>
-                        </li>
-                        <li>
+                                <span class="logo-name">HTML5</span>
+                        </div>
+
+                        <div class="LogoCompétences">    
                             <img src="media/css-3.png" class="logo" alt="logo de CSS">
-                            <span class="logo-name">CSS</span>
-                        </li>
-                        <li>
+                                <span class="logo-name">CSS</span>
+                        </div>
+
+                        <div class="LogoCompétences">   
                             <img src="media/script-java.png" class="logo" alt="logo de Javascript">
-                            <span class="logo-name">Javascript</span>
-                        </li>
-                        <li>
+                                <span class="logo-name">Javascript</span>
+                        </div>
+
+                        <div class="LogoCompétences">
                             <img src="media/python.png" class="logo" alt="logo de Python">
-                            <span class="logo-name">Python</span>
-                        </li>
-                        <li>
+                                <span class="logo-name">Python</span>
+                        </div>
+
+                        <div class="LogoCompétences">
                             <img src="media/java.png" class="logo" alt="logo de Java">
-                            <span class="logo-name">Java</span>
-                        </li>
-                        <li>
+                                <span class="logo-name">Java</span>
+                        </div>
+
+                        <div class="LogoCompétences">
                             <img src="media/php.png" class="logo" alt="logo de PHP">
-                            <span class="logo-name">PHP</span>
-                        </li>
-                        <li>
+                                <span class="logo-name">PHP</span>
+                        </div>
+
+                        <div class="LogoCompétences">
                             <img src="media/node-JS.png" class="logo" alt="logo de Node.Js">
-                            <span class="logo-name">Node.js</span>
-                        </li>
-                    </ul>
-                </div>
-            </article>
+                                <span class="logo-name">Node.js</span>
+                        </div>
+
+                        <div class="LogoCompétences">
+                            <img src="media/bootstrap-brands-solid.svg" class="logo" alt="logo de bootstrap">
+                                <span class="logo-name">Bootstrap</span>
+                        </div>
+
+                    </div>
+            
+                
+
         </section>
 
-        
-           
-            <section id="Navigation3">
+        <section id="Navigation3" class="fade-in">
+            <h2>Mes projets</h2>
+        <div class="projets">
+                <div class="projet">
+                    <a href="https://yugarra59.github.io/Horloge-JS/" target="_blank" class="nomprojet">Horloge</a>
+                    </div>
+                <div class="projet">
+                    <a href="https://yugarra59.github.io/Jeux-de-tir-js/" target="_blank" class="nomprojet">Jeux de tir</a>
+                 </div>
+                <div class="projet">
+                    <a href="https://yugarra59.github.io/Exercice-openclassroom/" target="_blank" class="nomprojet">Site web<br> des bonnes pièces</a>
+                </div>
+                <div class="projet">
+                </div>
+                <div class="projet">
+                </div>
+        </div>
+       
 
-                   
-                <h2>Mes projets</h2>
-                <article class="projet-slider"> 
-                    <figure>
-                        <a href="https://yugarra59.github.io/Horloge-JS/" target="_blank">
-                            <img src="media/horloge.png" alt="Horloge">
-                            <figcaption>Horloge</figcaption>
-                        </a>
-                    </figure>
-                    <figure>
-                        <a href="https://yugarra59.github.io/Jeux-de-tir-js/" target="_blank">
-                            <img src="media/chat_blasé.png" alt="Jeux de tir">
-                            <figcaption>Jeux de tir</figcaption>
-                        </a>
-                    </figure>
-                    <figure>
-                        <a href="https://yugarra59.github.io/Exercice-openclassroom/" target="_blank">
-                            <img src="media/Les_bonnes_pièces.png" alt="Site web des bonnes pièces">
-                            <figcaption>Site web des bonnes pièces</figcaption>
-                        </a>
-                    </figure>
-                </article>
-            </section>
+        </section>
 
         <section id="Navigation4" class="fade-in">
             <h2 class="section-contact">Me contacter</h2>
@@ -163,26 +161,19 @@
 </main>
         
     
-    <footer class="navigation">
-        
-        <ul>
-        
-        <li><a href="#Navigation5">Haut de page</a></li>
-
-            </ul>    
-            
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/owen-henry-/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/Yugarra59" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
+    <footer class="bouton-navigation-footer">
+        <div class ="align-button-footer">
+            <a href="#Navigation5" class="nav-button">Accueil</a> 
+        <a href="https://www.linkedin.com/in/owen-henry-/" target="_blank">
+            <img src="media/sociale.svg"  class="social svg" alt="logo de linkedin">
+            </a>
+            <a href="https://github.com/Yugarra59" target="_blank">
+                <img src="media/github.svg" class="social svg" alt="logo de Github">
+            </a>
+            </div>
         
         </footer>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js" integrity="sha512-LaBO0tZh1+6Ebk+EnHt/WsGM0UnmkCXfQ1rfhGmpa5MXUdslNuSSELBRcteHKz4k4ny+Op10Ax2fPoTNq+VcUg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+        
        
 </body>
 </html>

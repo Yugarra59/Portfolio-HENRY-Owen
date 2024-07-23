@@ -1,4 +1,0 @@
-
-
-form-nom-email responsice: display: flex;
-  flex-direction: row;
