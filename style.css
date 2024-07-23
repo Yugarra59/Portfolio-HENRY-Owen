@@ -142,7 +142,7 @@ main.container {
 .photo {
   border-radius: 50%;
   border: 3px ridge #411414;
-  
+  text-align: center;
   
 }
 
