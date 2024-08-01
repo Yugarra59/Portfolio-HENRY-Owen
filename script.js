@@ -18,6 +18,20 @@ $(document).ready(function() {
   
   let currentProject = 0;
   
+  function updateCarousel() {
+    projects.forEach((project, index) => {
+      if (index === currentProject) {
+        project.style.opacity = 1;
+        project.style.transform = 'scale(1)';
+        project.style.pointerEvents = 'auto';
+      } else {
+        project.style.opacity = 0;
+        project.style.transform = 'scale(0.5)';
+        project.style.pointerEvents = 'none';
+        }
+    });
+  }
+  
   prevButton.addEventListener('click', () => {
     currentProject--;
     if (currentProject < 0) {
@@ -34,23 +48,15 @@ $(document).ready(function() {
     updateCarousel();
   });
   
-  function updateCarousel() {
-    projects.forEach((project, index) => {
-      if (index === currentProject) {
-        project.style.opacity = 1;
-        project.style.transform = 'scale(1)';
-      } else {
-        project.style.opacity = 0;
-        project.style.transform = 'scale(0.5)';
-      }
-    });
-  }
+ 
   
-  updateCarousel();
 
+ 
   function toggler(){
     const icon = document.querySelector("#toggler");
     const menu = document.querySelector(".menu");
+   
+
         if(icon.innerHTML == "menu"){
         icon.innerHTML = "close";
         menu.style.display = "block";
@@ -60,5 +66,8 @@ $(document).ready(function() {
         }
 
     }
+
+     
+   
 
 
