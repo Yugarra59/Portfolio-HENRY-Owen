@@ -191,7 +191,7 @@ main.container
 /*introduction*/
 #Navigation1 p
 {
-	text-align: justify;
+	text-align: center;
 }
 
 #Navigation1 span
@@ -533,6 +533,11 @@ button[type="submit"]:active
 		align-items: center ;
 		flex-direction: row-reverse;
 		gap: 5em;
+	}
+
+		#Navigation1 p
+	{
+		text-align: justify;
 	}
 
 	.skill ul
